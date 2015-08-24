@@ -2,12 +2,11 @@ import * as esriRequest from 'esri/request';
 import * as GraphicsLayer from 'esri/layers/GraphicsLayer';
 
 class Edit {
-  cache: []
-
   constructor(params) {
     this.map = params.map;
     this.layer = params.layer;
     this.dummyLayer = new GraphicsLayer();
+    this.cache = [];
     this.map.add(this.dummyLayer);
   }
 

@@ -12,6 +12,7 @@ define(['exports', 'module', 'esri/request', 'esri/layers/GraphicsLayer'], funct
       this.map = params.map;
       this.layer = params.layer;
       this.dummyLayer = new _esriLayersGraphicsLayer();
+      this.cache = [];
       this.map.add(this.dummyLayer);
     }
 
