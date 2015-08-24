@@ -63,6 +63,7 @@ class Edit {
     if (this.cache.length) {
       this.cache.map(x => this._edit(x.graphic, x.type));
       this.dummyLayer.clear();
+      this.cache.length = 0;
     }
   }
 }

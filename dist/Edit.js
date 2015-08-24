@@ -85,6 +85,7 @@ define(['exports', 'module', 'esri/request', 'esri/layers/GraphicsLayer'], funct
             return _this._edit(x.graphic, x.type);
           });
           this.dummyLayer.clear();
+          this.cache.length = 0;
         }
       }
     }]);
