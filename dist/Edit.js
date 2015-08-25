@@ -65,8 +65,8 @@ define(['exports', 'module', 'esri/request', 'esri/layers/GraphicsLayer'], funct
         }
       }
     }, {
-      key: 'del',
-      value: function del(graphic) {
+      key: 'remove',
+      value: function remove(graphic) {
         var immediate = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
 
         if (immediate) {

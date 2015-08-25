@@ -49,7 +49,7 @@ class Edit {
     }
   }
 
-  del(graphic, immediate = true) {
+  remove(graphic, immediate = true) {
     if(immediate) {
       this._edit(graphic, 'delete');
     } else {
